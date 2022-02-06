@@ -18,7 +18,7 @@ The same with DEBUG mode (last parameter set to 1)
 pgrabarczyk@pgrabarczyk:~/git/csv-file-splitter$ bash csv-file-splitter.sh "sample.csv" 3 "result_" 1
 2022-02-06 23:54:57.059 - source_csv_path: sample.csv
 2022-02-06 23:54:57.060 - dest_prefix_path: /home/pgrabarczyk/git/csv-file-splitter/output/result_
-2022-02-06 23:54:57.066 - There is 7 lines in file. I'll create 2 files per 3 (Last file may have less)
+2022-02-06 23:54:57.066 - There is 7 lines in file. I\'ll create 2 files per 3 (Last file may have less)
 2022-02-06 23:54:57.067 - Start processing.
 2022-02-06 23:54:57.070 - Creating file /home/pgrabarczyk/git/csv-file-splitter/output/result_000001.csv with lines [1;4]
 2022-02-06 23:54:57.072 - Creating file /home/pgrabarczyk/git/csv-file-splitter/output/result_000002.csv with lines [4;7]
@@ -46,7 +46,7 @@ CSVLine,Anything
 
 40seconds to split 188MB file into 888 smaller:
 ```bash
-2022-02-06 23:56:33.662 - There is 88884 lines in file. I'll create 888 files per 100 (Last file may have less)
+2022-02-06 23:56:33.662 - There is 88884 lines in file. I\'ll create 888 files per 100 (Last file may have less)
 2022-02-06 23:56:33.663 - Start processing.
 2022-02-06 23:57:14.425 - Done.
 ```
