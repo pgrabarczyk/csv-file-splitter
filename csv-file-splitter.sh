@@ -23,7 +23,7 @@ split_files() {
 
   local lines_in_files=$(wc -l "${source_csv_path}" | awk '{print $1}')
   local files_to_create=$(((lines_in_files-1)/lines_per_file))
-  _print_log "There is ${lines_in_files} lines in file. I'll create ${files_to_create} files per ${lines_per_file} (Last file may have less)"
+  _print_log "There is ${lines_in_files} lines in file. I will create ${files_to_create} files per ${lines_per_file} (Last file may have less)"
 
   _print_log "Start processing."
 
