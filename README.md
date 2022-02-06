@@ -8,7 +8,7 @@ Example usage:
 pgrabarczyk@pgrabarczyk:~/git/csv-file-splitter$ bash csv-file-splitter.sh "sample.csv" 3 "result_" 
 2022-02-06 23:56:07.747 - source_csv_path: sample.csv
 2022-02-06 23:56:07.749 - dest_prefix_path: /home/pgrabarczyk/git/csv-file-splitter/output/result_
-2022-02-06 23:56:07.755 - There is 7 lines in file. I'll create 2 files per 3 (Last file may have less)
+2022-02-06 23:56:07.755 - There is 7 lines in file. I\'ll create 2 files per 3 (Last file may have less)
 2022-02-06 23:56:07.756 - Start processing.
 2022-02-06 23:56:07.761 - Done.
 ```
