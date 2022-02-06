@@ -10,16 +10,16 @@ split_files() {
   local lines_per_file="${2}"
   local dest_prefix_name="${3}"
 
+  echo "source_csv_path: ${source_csv_path}"
   local dest_prefix_path="$(pwd)/output/${dest_prefix_name}"
   echo "dest_prefix_path: ${dest_prefix_path}"
 
   local headline=$(awk "NR==1" "${source_csv_path}")
-#  local start_line=1
   local file_no=0
   
   mkdir -p "$(dirname ${dest_prefix_path})"
 
-  local lines_in_files=$(wc -l sample.csv | awk '{print $1}')
+  local lines_in_files=$(wc -l "${source_csv_path}" | awk '{print $1}')
   local files_to_create=$(((lines_in_files-1)/lines_per_file))
   echo "There is ${lines_in_files} lines in file. I'll create ${files_to_create} files per ${lines_per_file} (Last file may have less)"
 
